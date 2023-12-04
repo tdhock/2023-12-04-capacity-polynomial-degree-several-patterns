@@ -1,0 +1,748 @@
+{
+ "geoms": {
+ "geom1_tallrect_error": {
+ "geom": "tallrect",
+"classed": "geom1_tallrect_error",
+"aes": {
+ "key": "key",
+"xmin": "min",
+"xmax": "max",
+"clickSelects.variable": "var",
+"clickSelects.value": "click.val",
+"showSelected.variable": "var",
+"showSelected.value": "show.val" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.5,
+"colour": "transparent",
+"fill": "#0000FF",
+"showSelected": "show.val",
+"clickSelects": "click.val" 
+},
+"types": {
+ "xmin": "numeric",
+"xmax": "numeric",
+"key": "character",
+"clickSelects.variable": "character",
+"clickSelects.value": "integer",
+"showSelected.variable": "character",
+"showSelected.value": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected.variable",
+"showSelected.value" 
+],
+"subset_order": [
+ "showSelected.variable" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom2_line_error": {
+ "geom": "line",
+"classed": "geom2_line_error",
+"aes": {
+ "x": "degree",
+"y": "log10(mse.thresh)",
+"colour": "set",
+"group": "paste(pattern, set)",
+"clickSelects": "pattern",
+"showSelected1": "set" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        5,
+"clickSelects": "pattern",
+"showSelected": "set",
+"alpha_off":      0.1 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"group": "character",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_point_error": {
+ "geom": "point",
+"classed": "geom3_point_error",
+"aes": {
+ "x": "degree",
+"y": "log10(mse.thresh)",
+"colour": "set",
+"clickSelects": "pattern",
+"showSelected1": "set" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"shape":        1,
+"fill": "#FFFFFF",
+"size":        4,
+"alpha_off":      0.1,
+"clickSelects": "pattern",
+"showSelected": "set" 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom4_text_error": {
+ "geom": "text",
+"classed": "geom4_text_error",
+"aes": {
+ "x": "degree",
+"y": "log10(mse.thresh)",
+"label": "pattern",
+"colour": "set",
+"clickSelects": "pattern",
+"showSelected1": "set" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"clickSelects": "pattern",
+"showSelected": "set",
+"anchor": "start" 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"label": "character",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_point_funs": {
+ "geom": "point",
+"classed": "geom5_point_funs",
+"aes": {
+ "x": "x",
+"y": "ynorm",
+"colour": "set",
+"key": "x",
+"showSelectedlegendcolour": "set",
+"showSelected1": "pattern" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"shape":        1,
+"fill": "transparent",
+"size":        4,
+"stroke":        1,
+"showSelected": "pattern" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"key": "numeric",
+"showSelectedlegendcolour": "character",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [
+ "pattern" 
+],
+"nest_order": [
+ "showSelectedlegendcolour" 
+],
+"subset_order": [
+ "showSelectedlegendcolour" 
+],
+"columns": {
+ "common": [
+ "colour",
+"x",
+"key",
+"showSelectedlegendcolour",
+"group" 
+] 
+},
+"chunks": {
+ "constant": 1,
+"cubic": 2,
+"linear": 3,
+"quadratic": 4 
+},
+"total": 4 
+},
+"geom6_line_funs": {
+ "geom": "line",
+"classed": "geom6_line_funs",
+"aes": {
+ "x": "x",
+"y": "pred.thresh",
+"key": "pred",
+"showSelected1": "pattern",
+"showSelected2": "degree" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#0000FF",
+"showSelected": [ "pattern", "degree" ] 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"key": "character",
+"showSelected1": "character",
+"showSelected2": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [
+ "pattern",
+"degree" 
+],
+"nest_order": [],
+"subset_order": [],
+"columns": {
+ "common": [
+ "x",
+"key",
+"group" 
+] 
+},
+"chunks": {
+ "constant": {
+ "0": 1,
+"1": 2,
+"2": 3,
+"3": 4,
+"4": 5,
+"5": 6,
+"6": 7,
+"7": 8,
+"8": 9,
+"9": 10 
+},
+"cubic": {
+ "0": 11,
+"1": 12,
+"2": 13,
+"3": 14,
+"4": 15,
+"5": 16,
+"6": 17,
+"7": 18,
+"8": 19,
+"9": 20 
+},
+"linear": {
+ "0": 21,
+"1": 22,
+"2": 23,
+"3": 24,
+"4": 25,
+"5": 26,
+"6": 27,
+"7": 28,
+"8": 29,
+"9": 30 
+},
+"quadratic": {
+ "0": 31,
+"1": 32,
+"2": 33,
+"3": 34,
+"4": 35,
+"5": 36,
+"6": 37,
+"7": 38,
+"8": 39,
+"9": 40 
+} 
+},
+"total": 40 
+} 
+},
+"duration": {
+ "pattern":     1000,
+"degree":     1000 
+},
+"selectors": {
+ "set": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "test", "train" ],
+"levels": [ "test", "train" ],
+"update": [
+ "geom2_line_error",
+"geom3_point_error",
+"geom4_text_error",
+"geom5_point_funs" 
+] 
+},
+"degree": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"chunks": "pattern_degree",
+"selected": "0",
+"levels": [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ],
+"update": [
+ "geom1_tallrect_error",
+"geom6_line_funs" 
+],
+"duration":     1000 
+},
+"pattern": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"chunks": [ "pattern", "pattern_degree" ],
+"selected": "constant",
+"levels": [ "constant", "cubic", "linear", "quadratic" ],
+"update": [
+ "geom2_line_error",
+"geom3_point_error",
+"geom4_text_error",
+"geom5_point_funs",
+"geom6_line_funs" 
+],
+"duration":     1000 
+} 
+},
+"plots": {
+ "error": {
+ "panel_margin_lines":     0.25,
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9 
+] 
+],
+"y": [
+ [
+       -6,
+      -4,
+      -2,
+       0,
+       2 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -1,
+    -0.5,
+       0,
+     0.5,
+       1,
+     1.5,
+       2,
+     2.5,
+       3,
+     3.5,
+       4,
+     4.5,
+       5,
+     5.5,
+       6,
+     6.5,
+       7,
+     7.5,
+       8,
+     8.5,
+       9,
+     9.5,
+      10 
+] 
+],
+"y": [
+ [
+       -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+       0,
+       1,
+       2 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9 
+],
+"xlab": [
+ "0",
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9" 
+],
+"xrange": [    -1.55,    10.55 ],
+"xline": true,
+"xticks": true,
+"y": [
+       -6,
+      -4,
+      -2,
+       0,
+       2 
+],
+"ylab": [
+ "-6",
+"-4",
+"-2",
+"0",
+"2" 
+],
+"yrange": [ -6.353764, 2.424066 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "polynomial degree",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "log10(mean squared error)",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0",
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9" 
+],
+"ylabs": [
+ "-6",
+"-4",
+"-2",
+"0",
+"2" 
+],
+"title": "Select pattern and degree",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"geoms": [
+ "geom1_tallrect_error",
+"geom2_line_error",
+"geom3_point_error",
+"geom4_text_error" 
+] 
+},
+"funs": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "set": {
+ "guide": "legend",
+"geoms": "point",
+"title": "set",
+"class": "set",
+"selector": "set",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointcolour": "#FF0000",
+"pointshape":        1,
+"pointsize":        4,
+"pointstroke":        1,
+"label": "test" 
+},
+{
+ "pointcolour": "#000000",
+"pointshape":        1,
+"pointsize":        4,
+"pointstroke":        1,
+"label": "train" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -5,
+    -2.5,
+       0,
+     2.5,
+       5 
+] 
+],
+"y": [
+ [
+        0,
+     0.4,
+     0.8 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -5,
+   -3.75,
+    -2.5,
+   -1.25,
+       0,
+    1.25,
+     2.5,
+    3.75,
+       5 
+] 
+],
+"y": [
+ [
+        0,
+     0.2,
+     0.4,
+     0.6,
+     0.8,
+       1 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       -5,
+    -2.5,
+       0,
+     2.5,
+       5 
+],
+"xlab": [
+ "-5.0",
+"-2.5",
+"0.0",
+"2.5",
+"5.0" 
+],
+"xrange": [     -5.5,      5.5 ],
+"xline": true,
+"xticks": true,
+"y": [
+        0,
+     0.4,
+     0.8 
+],
+"ylab": [
+ "0.0",
+"0.4",
+"0.8" 
+],
+"yrange": [ -0.1594454, 1.158968 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "input/feature",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "output/label",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-5.0",
+"-2.5",
+"0.0",
+"2.5",
+"5.0" 
+],
+"ylabs": [
+ "0.0",
+"0.4",
+"0.8" 
+],
+"title": "Selected pattern (points) and degree (blue curve)",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"geoms": [
+ "geom5_point_funs",
+"geom6_line_funs" 
+] 
+} 
+},
+"title": "Overfitting using linear model polynomial degree",
+"source": "https://github.com/tdhock/cs499-spring2020/blob/master/2020-02-03-capacity/figure-quadratic-interactive.R" 
+}

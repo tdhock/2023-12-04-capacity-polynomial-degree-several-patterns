@@ -1,0 +1,5 @@
+colour	y	x	label	clickSelects	showSelected1	group
+#FF0000	1.4525346757958	9	constant	constant	test	1
+#FF0000	1.72304263456465	9	cubic	cubic	test	2
+#FF0000	2.02507380299064	9	quadratic	quadratic	test	4
+#FF0000	-0.185485131854922	9	linear	linear	test	3
