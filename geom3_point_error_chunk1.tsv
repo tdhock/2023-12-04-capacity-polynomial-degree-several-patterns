@@ -1,0 +1,5 @@
+colour	y	x	clickSelects	showSelected1
+#FF0000	-1.2083973951143	0	constant	test
+#FF0000	-2.42664868612782	3	cubic	test
+#FF0000	-1.99002681655794	2	quadratic	test
+#FF0000	-2.77415856205359	1	linear	test
